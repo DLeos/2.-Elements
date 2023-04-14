@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> ¡Elements!</title>        
+        <link rel="stylesheet" href="./CSS_Elements/Styles.css">
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1> ¡Elements! </h1>
+                <p id="introduccion"> Que elemento te acompaña es  tu elección </p>
+            </div>
+            <div class="main-content">
+                                
+                <section id="selecion-personaje">
+                    <h2>Escoje tu personaje</h2>
+
+                    <div class="tarjetasPersonajes">
+
+                        <input type="radio" name="personaje" id="animax" />
+                        <label class="presentacionpersonaje" for="animax">
+                            <p><strong>Animax</strong></p>
+                            <img src="./Imagenes/Animax2.jpg" alt="Personaje Animax">
+                        </label>
+                        
+                        <input type="radio" name="personaje" id="valtrik" />
+                        <label class="presentacionpersonaje" for="valtrik">
+                            <p><strong>Valtrik</strong></p>
+                            <img src="./Imagenes/Valtrick2.jpg"  alt="Personaje Valtrick">
+                        </label>
+                        
+                        <input type="radio" name="personaje" id="darlog" />
+                        <label class="presentacionpersonaje" for="darlog">
+                            <p><strong>Darlog</strong></p>
+                            <img src="./Imagenes/Darlog2.jpg"  alt="Personaje Darlog">
+                        </label>
+                        
+                        <input type="radio" name="personaje" id="kinlee">
+                        <label class="presentacionpersonaje" for="kinlee">
+                            <p><strong>Kinlee</strong></p>
+                            <img src="./Imagenes/Kinlee2.png"  alt="Personaje Kinlee">
+                        </label>
+
+                    </div>
+
+                    <button id="boton_Personaje">Selecionar</button>
+
+                </section>
+
+                <section id="selecion-elemento">
+
+                    <div class="datosPersonaje">
+                        
+                        <div class="detalleJugador">
+                            <p>Tu personaje <strong><span id="nombrepersonaje"></span></strong></p>
+                            <p>Vida</p>
+                            <strong><span id="qvida"></span></strong>
+                        </div>
+
+                        <div class="detalleRival" >
+                            <p>Tu enemigo <strong><span id="nombrepersonajerival"></span></strong></p>
+                            <p>Vida</p>
+                            <strong><span id="qvidarival"></span></strong>
+                        </div>
+                                                
+                    </div>
+                    
+                    <h2>Escoje tu elemento</h2>
+
+                    <p id="botonesDeAtaque">
+                        <button id="boton_Elemento_Fuego"><span id="textBotonFuego"> 🔥 </span></button>
+                        <button id="boton_Elemento_Agua"><span id="textBotonAgua"> 💧 </span></button>
+                        <button id="boton_Elemento_Tierra"><span id="textBotonTierra"> ⛰ </span></button>
+                        <button id="boton_Elemento_Viento"><span id="textBotonViento"> 🌬 </span></button>
+                    </p>
+                    
+                </section>
+            </div>
+
+            <div class="footer">
+            <strong><section id="MensajeFinal"> </section></strong>
+            <section id="sectionReinicar">
+                <button id="reiniar-juego"><span id="textReiniciar">Reinciar</span></button>
+            </section>
+            <section id="Mensajes"> </section>
+
+            </div>
+        </div>
+
+        <script src="./Js_Elements/Elements.js"></script>
+        
+    </body>
+</html>
